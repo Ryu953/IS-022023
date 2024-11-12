@@ -1,0 +1,11 @@
+@startuml practicab2
+class persona
+class estudiante
+class profesor
+class empleado
+
+skinparam groupInheritance 3
+persona <|-- estudiante
+persona <|-- profesor
+persona <|-- empleado
+@enduml

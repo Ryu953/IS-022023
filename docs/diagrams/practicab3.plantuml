@@ -1,0 +1,8 @@
+@startuml practicab3
+class dicosDuro
+class pista
+class sector
+
+dicosDuro  *-- "1..*" pista
+pista *-- "1..*" sector
+@enduml

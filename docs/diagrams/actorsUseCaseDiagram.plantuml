@@ -3,11 +3,7 @@ left to right direction
 actor Player
 usecase Start
 usecase Play
-<<<<<<< HEAD
 usecase End
-=======
-usecase Beggining
->>>>>>> ramaConflicto
 
 Player --> Start
 Player --> Play

@@ -1,0 +1,36 @@
+@startuml reto2_clase
+
+class persona{
+    -telefono: int
+    -nombre: string
+    -dirreccion: string
+}
+
+class jugador{
+    -numero: int
+    -posicion: string
+    -capitan: bool
+}
+
+class entrenador{
+    -nivel_Acreditacion: int
+    -anios_experiencia: int
+}
+
+class equipo{
+    -nombre: string
+    -registro: int
+}
+
+class deporte{
+    -localidad: string
+    -puntuacion: string
+}
+
+persona <|--- jugador 
+persona <|--- entrenador
+equipo o-- "6..20" jugador
+equipo "1..*" o--r- entrenador
+equipo --- deporte : compite
+
+@enduml

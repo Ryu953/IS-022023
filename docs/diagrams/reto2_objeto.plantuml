@@ -1,0 +1,103 @@
+@startuml ads
+
+/' equipo de venezuela '/
+object  "Venezuela : equipo" as o2 {
+    nombre = seleccion de voleibol de Venezuela
+    registro = 15349
+}
+
+object " Jugador1 : jugador" as o3 {
+    telefono = 0000 0000000
+    nombre = Armando Velásquez
+    direccion = Caracas
+    numero = 13
+    posicion = levantador
+    capitan = false
+}
+
+object " Jugador2 : jugador" as o4 {
+    telefono = 0000 0000000
+    nombre = Emerson Rodríguez
+    direccion = Caracas
+    numero = 15
+    posicion = opuesto
+    capitan = false
+}
+
+object " Jugador3 : jugador" as o5 {
+    telefono = 0000 0000000
+    nombre = José Verdi
+    direccion = Caracas
+    numero = 03
+    posicion = central
+    capitan = true
+}
+
+object " entrenador1 : entrenador" as o6 {
+    telefono = 0000 0000000
+    nombre = Ronald Sarti
+    direccion = Caracas
+    nivel_Acreditacion = B1
+    anios exp = 5
+}
+
+object "voleibol : deporte" as o7 {
+    localidad = Santiago de chile
+    puntuacion = 15 - 18
+}
+
+/' equipo de colombia '/
+
+object  "Colombia : equipo" as a2 {
+    nombre = Seleccion de voleibol de Colombia
+    registro = 15479
+}
+
+object " Jugador4 : jugador" as a3 {
+    telefono = 0000 0000000
+    nombre = Andrés Chávez 
+    direccion = Colombia
+    numero = 06
+    posicion = levantador
+    capitan = false
+}
+
+object " Jugador5 : jugador" as a4 {
+    telefono = 0000 0000000
+    nombre = Diego Echeverri
+    direccion = Colombia
+    numero = 09
+    posicion = opuesto
+    capitan = false
+}
+
+object " Jugador5 : jugador" as a5 {
+    telefono = 0000 0000000
+    nombre = Eduardo Millán
+    direccion = Colombia
+    numero = 18
+    posicion = central
+    capitan = true
+}
+
+object " entrenador1 : entrenador" as a6 {
+    telefono = 0000 0000000
+    nombre = Jean Pérez
+    direccion = Colombia
+    nivel_Acreditacion = B1
+    anios exp = 4
+}
+
+o2 o-- o3
+o2 o-- o4
+o2 o-- o5
+o2 o--r o6
+
+o7 -- o2 : compite
+o7 --u a2 : compite
+
+a2 o--u a3
+a2 o--u a4
+a2 o--u a5
+a2 o--l a6
+@enduml

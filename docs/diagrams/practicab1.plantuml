@@ -1,0 +1,6 @@
+@startuml practica1B
+class teclado{}
+class tecla{}
+
+tecla "105..*" -u--o  teclado
+@enduml
