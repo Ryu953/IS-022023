@@ -1,0 +1,12 @@
+@startuml reto3_estado
+state c <<choice>>
+
+[*] --> pagando : encargando producto
+pagando --> validando : procesando pago
+validando --> c : enviando producto
+c --> entregando : envio normal
+c --> entregando : envio urgente
+entregando --> encuestando : enviando cervezas
+encuestando --> [*] : enviando factura
+
+@enduml

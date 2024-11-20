@@ -1,0 +1,7 @@
+@startuml retor_comunicacion
+rectangle ":registro" as registro
+rectangle ":venta" as venta
+
+registro -r--- venta : 1: create \n 2: crearLineaVenta()  --|>
+venta -- venta : 3: lineaVenta() \n 4: new() \n 5: lineaVenta.añadir()
+@enduml
